@@ -5,22 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Your Name</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    .logo-img {
+        height: 60px;           /* adjust size if needed */
+        width: auto;
+        filter: invert(1);     /* makes black → white, perfect on dark navbar */
+        transition: filter 0.3s;
+    }
+    .logo-img:hover {
+        filter: invert(0.8);    /* slight dim on hover – optional but cool */
+    }
+    .logo-text { display: none; }  /* hides fallback text */
+    
+    @media (max-width: 768px) {
+        .logo-img { height: 35px; }
+    }
+</style>
 </head>
 <body>
     <!-- Reuse nav from index.html - copy the <header> here if needed, or use JS to inject -->
     <header>
         <nav class="navbar">
-            <!-- Same nav as index.html -->
             <div class="nav-container">
                 <div class="logo">
+                    <!-- THIS IS THE ONLY LINE THAT MATTERS RIGHT NOW -->
+                    <img src="images/logo1.png" alt="Your Logo" class="logo-img">
+                    <!-- fallback text if the image ever fails to load -->
                     <span class="logo-text">Your Name</span>
                 </div>
+
                 <ul class="nav-menu">
-                    <li><a href="index.html#home">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="index.html#support">Support</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -71,4 +90,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
