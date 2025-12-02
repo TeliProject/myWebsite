@@ -6,17 +6,21 @@
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Tiny fix so the logo image shows nicely */
-        .logo-img {
-            height: 40px;           /* adjust this if your logo is bigger/smaller */
-            width: auto;
-            vertical-align: middle;
-        }
-        .logo-text { display: none; }  /* hides the fallback text when logo is present */
-        @media (max-width: 768px) {
-            .logo-img { height: 35px; }
-        }
-    </style>
+    .logo-img {
+        height: 60px;           /* adjust size if needed */
+        width: auto;
+        filter: invert(1);     /* makes black → white, perfect on dark navbar */
+        transition: filter 0.3s;
+    }
+    .logo-img:hover {
+        filter: invert(0.8);    /* slight dim on hover – optional but cool */
+    }
+    .logo-text { display: none; }  /* hides fallback text */
+    
+    @media (max-width: 768px) {
+        .logo-img { height: 35px; }
+    }
+</style>
 </head>
 <body>
     <header>
@@ -65,4 +69,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
