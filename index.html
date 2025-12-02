@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <!-- Swap with your logo: <img src="path/to/your-logo.png" alt="Your Logo" class="logo-img"> -->
+                    <span class="logo-text">Your Name</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="accent">Your Name</span></h1>
+                <p>Creative developer & designer passionate about innovative projects. Let's build something amazing.</p>
+                <!-- Swap hero image: -->
+                <img src="https://source.unsplash.com/random/800x600/?creative" alt="Hero Image" class="hero-img">
+                <a href="#projects" class="cta-btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a [your profession, e.g., full-stack developer] with [X years] experience in [your skills, e.g., web design, animation, and storytelling through code]. When not coding, you'll find me [hobby, e.g., exploring new tech or sketching ideas].</p>
+                <!-- Swap profile pic: -->
+                <img src="https://source.unsplash.com/random/300x300/?portrait" alt="About Me Photo" class="about-img">
+            </div>
+        </section>
+
+        <!-- Projects Teaser -->
+        <section id="projects" class="section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://source.unsplash.com/random/400x300/?project1" alt="Project 1 Thumbnail">
+                    <h3>Project One</h3>
+                    <p>A cool video project showcasing [brief desc].</p>
+                    <a href="projects.html#proj1" class="project-link">Watch Video</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://source.unsplash.com/random/400x300/?project2" alt="Project 2 Thumbnail">
+                    <h3>Project Two</h3>
+                    <p>Another innovative piece with [brief desc].</p>
+                    <a href="projects.html#proj2" class="project-link">Watch Video</a>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            <a href="projects.html" class="cta-btn">See All Projects</a>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support" class="section">
+            <h2>Support My Work</h2>
+            <p>If you love what I do, consider supporting via [e.g., Ko-fi, Patreon]. Every bit helps fuel new creations!</p>
+            <!-- Add buttons/links: -->
+            <a href="https://ko-fi.com/yourusername" class="support-btn" target="_blank">Buy Me a Coffee</a>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Get In Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+            <p>Or email me at: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

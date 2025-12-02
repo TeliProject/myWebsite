@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Reuse nav from index.html - copy the <header> here if needed, or use JS to inject -->
+    <header>
+        <nav class="navbar">
+            <!-- Same nav as index.html -->
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Your Name</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="index.html#support">Support</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects" class="section projects-gallery">
+            <h1>All Projects</h1>
+            <div class="gallery-grid">
+                <div class="gallery-item" id="proj1">
+                    <!-- Swap thumbnail: -->
+                    <img src="https://source.unsplash.com/random/400x300/?video1" alt="Project 1 Thumbnail">
+                    <div class="overlay">
+                        <button class="video-btn" data-video="https://www.youtube.com/embed/VIDEO_ID_1">Play Video</button>
+                    </div>
+                    <h3>Project One</h3>
+                    <p>[Description here]</p>
+                </div>
+                <div class="gallery-item" id="proj2">
+                    <img src="https://source.unsplash.com/random/400x300/?video2" alt="Project 2 Thumbnail">
+                    <div class="overlay">
+                        <button class="video-btn" data-video="https://www.youtube.com/embed/VIDEO_ID_2">Play Video</button>
+                    </div>
+                    <h3>Project Two</h3>
+                    <p>[Description here]</p>
+                </div>
+                <!-- Add more items -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="video-player" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
